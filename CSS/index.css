@@ -83,24 +83,26 @@ h1 {
     /*font-size: calc( 5rem * 50vw )!important;*/
 
 }
+h3,h2 {
+    font-family: 'Miriam Libre', sans-serif;
+    margin-bottom: 1.5rem;
+}
 
 p,h4,h5,h6{
     font-family: 'Nunito', sans-serif;
 }
-h5{
+
+.heading{
     font-weight: 600!important;
+    font-size: 1.2rem;
 }
-h3 {
-    font-family: 'Miriam Libre', sans-serif;
-}
+
 /*
    font-family: 'Be Vietnam Pro', sans-serif;
 
 
 */
-h3 {
-    margin-bottom: 1.5rem;
-}
+
 
 
 .underline {
@@ -632,14 +634,14 @@ footer a:hover {
     }
 
 
-    .ossbox h5 {
+    .ossbox .heading {
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-        max-width: calc(21ch);
+        max-width: calc(52ch);
     }
 
-    .ossboxopen h5 {
+    .ossboxopen .heading {
         white-space: normal;
         text-overflow: inherit;
     }
