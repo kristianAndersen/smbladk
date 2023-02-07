@@ -6,11 +6,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let burger = document.querySelector('.hamburger-lines')
     let mobilnav = document.querySelector('.mobilnav');
 
+    let tl = document.querySelector('.tl')
+    let scrollRight = document.getElementById('scroll-right');
+    let scrollLeft = document.getElementById('scroll-left');
+  
+    /*Scroll left right*/
+        scrollRight.addEventListener('click', (event) => {
+        tl.scrollBy(330, 0);
+    });
+        scrollLeft.addEventListener('click', (event) => {
+        tl.scrollBy(-330, 0);
+    });
+
+    /*Faq open close */
     for (var i=0; i < articles.length; i++) {
         articles[i].addEventListener("click", toggle);
     };
-
-
 
         burger.addEventListener("click", toggleMobile);
         function toggleMobile(e) {
