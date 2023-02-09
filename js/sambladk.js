@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let burger = document.querySelector('.hamburger-lines')
     let mobilnav = document.querySelector('.mobilnav');
 
-    let partnerExpandBtn = document.querySelector('.partnerExpandBtn');
-    let partnersdiv = document.querySelector('.partnersdiv')
+   // let partnerExpandBtn = document.querySelector('.partnerExpandBtn');
+   // let partnersdiv = document.querySelector('.partnersdiv')
 
     let tl = document.querySelector('.tl')
     let scrollRight = document.getElementById('scroll-right');
@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         tl.scrollBy(-330, 0);
     });
 
-    /*partners expand top show all */
+    /*partners expand top show all 
     partnerExpandBtn.addEventListener('click', (event) => {
         partnersdiv.classList.toggle("partnersdiv-open");
     });
-
+    */
 
     /*Faq open close */
     for (var i=0; i < articles.length; i++) {

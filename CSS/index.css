@@ -236,21 +236,23 @@ nav a:hover {
 
 .hamburger-lines {
     display: block;
-    height: 26px;
-    width: 32px;
+    height: 2.5rem;
+    width: 2.5rem;
     top: 17px;
     left: 20px;
     z-index: 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:  space-evenly;
     cursor: pointer;
+    padding: 0.5rem;
+
 }
 
 
 .hamburger-lines .line {
     display: block;
-    height: 0.20rem;
+    height: 0.15rem;
     width: 100%;
     border-radius: 0.5rem;
     background: #fdfeff;
@@ -259,6 +261,7 @@ nav a:hover {
     -ms-border-radius: 0.5rem;
     -o-border-radius: 0.5rem;
 }
+
 
 .butn {
     font-family: 'Nunito', sans-serif;
@@ -306,7 +309,9 @@ header {
 }
 
 
-
+.section1{
+    background: rgb(var(--white));
+}
 
 /*Fluid flex grid*/
     .fluid-row {
@@ -351,15 +356,16 @@ header {
 }
 
 .bank {
-    filter: gray;
-    /*IE6-9*/-webkit-filter: grayscale(1);
-    /*GoogleChrome,Safari6+&Opera15+*/filter: grayscale(1);
-    /*MicrosoftEdgeandFirefox35+*/scale: 1;
+   /* filter: gray;
+    /*IE6-9 -webkit-filter: grayscale(1);
+    /*GoogleChrome,Safari6+&Opera15+filter: grayscale(1);
+    *//*MicrosoftEdgeandFirefox35+*/scale: 1;
     transition: all 400ms ease-in-out;
     -webkit-transition: all 400ms ease-in-out;
     -moz-transition: all 400ms ease-in-out;
     -ms-transition: all 400ms ease-in-out;
     -o-transition: all 400ms ease-in-out;
+    -webkit-filter: gray;
 }
 
 .bank:hover {
@@ -786,6 +792,9 @@ footer a:hover {
     }
 
     @media (min-width:992px) {
+        nav{
+            height: 3.75rem;
+        }
         .mobilnav {
             display: none;
             width: 100%;
