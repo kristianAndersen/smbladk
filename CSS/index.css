@@ -549,8 +549,8 @@ font-weight: 600;
     width: 7.5rem;
     height: 7.5rem;
     object-fit: contain !important;
-    filter:drop-shadow(30px 10px 4px rgb(var(--dark-red)));
-    -webkit-filter:drop-shadow(0.2rem 0.15rem 0.2rem rgba(var(--dark-red),0.5));
+ /*   filter:drop-shadow(30px 10px 4px rgb(var(--dark-red)));
+    -webkit-filter:drop-shadow(0.2rem 0.15rem 0.2rem rgba(var(--dark-red),0.5));*/
 }
 
 .ossbox {
