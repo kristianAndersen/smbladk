@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="da">
+
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sambla.dk</title>
+        <meta name="description" content=" " name="description">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#570014"/>
+    <!--
+        //TO do add cooki consent
+        <script type="text/javascript" charset="UTF-8" async="" src="https://consentcdn.cookiebot.com/consentconfig/e8b90224-a57f-47d2-a1da-24a1edc4f4cf/state.js"></script>
+        <script type="text/javascript" async="" src="https://consent.cookiebot.com/uc.js?cbid=e8b90224-a57f-47d2-a1da-24a1edc4f4cf&amp;consentmode-dataredaction=dynamic" id="Cookiebot"></script>
+    -->
+
+    <!--
+        To do add FB pixel
+    -->
+
+    <!--
+        To do add salus clicktracker
+    -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&family=Miriam+Libre:wght@700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/CSS/index.css">
+        <link rel="preload" fetchpriority="high" as="image" href="/img/samblaLogo.svg" type="image/svg+xml">
+    <style>
+        main{
+            min-height: 100%;
+        }
+        .explainGrid{
+            width: 100%;
+            display: grid;
+            column-gap: 1rem;
+            row-gap: 1rem;
+        }
+        
+        .heading{
+            line-height: 1;
+        }
+
+        form{
+            width: 100%;
+        }
+        #explainSearch{
+            width: 100%;
+            margin: 1rem 0;
+            padding: 1rem;
+            color: #464a4c;
+            background-color: rgb(var(--white));
+            background-image: none;
+            background-clip: padding-box;
+            border: 1px solid rgba(var(--koks),0.5);
+            border-radius: 1rem;
+        }
+        a{
+            text-decoration: none;
+        }
+        .ossbox{
+            margin: 0; 
+        }
+        .showit{
+            display: block;
+            opacity: 1;
+        }
+        .hide{
+            transition: opacity 200ms, display 200ms;
+            display: none;
+            opacity: 0;
+        }
+        @media (min-width:300px) {
+            .explainGrid{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        @media (min-width:700px) {
+            .explainGrid{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width:980px) {
+            .explainGrid{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+
+    </head>
+    
+    <body>
+            <nav class="d-flex container-fluid">
+                <div class="w-100 d-flex  flex-row align-items-center">
+
+                    <div class="ps-1 ps-lg-5"><a href="/" aria-label="Sambla.dk den nye generation af låneformidlere"> </a><img src="/img/Sambla_Logo_White-Red_RGB.svg" alt="Sambla.dk Logo" width="200" height="60"></a></div>
+                    <div class="flex-grow-1 d-flex flex-row align-items-center  justify-content-around">
+                        <a class="d-none  d-lg-flex" href="/laan-penge/">Lån penge</a>
+                        <a class="d-none  d-lg-flex" href="/samlelaan/">Samlelån</a>
+                        <a class="d-none  d-lg-flex" href="/billaan/">Billån</a>
+                        <a class="d-none  d-lg-flex" href="/laanetyper/">Lånetyper</a>
+                    </div>   
+                    <div class="flex-grow-1 pe-3 pe-lg-5 d-flex flex-row align-items-center  justify-content-end">
+                        <a aria-label="Ring til os" href="tel:70605730" class="d-flex align-items-center">
+                        <svg viewBox="0 0 24 24"><path fill="#ffffff" d="M16,18H7V4H16M11.5,22A1.5,1.5 0 0,1 10,20.5A1.5,1.5 0 0,1 11.5,19A1.5,1.5 0 0,1 13,20.5A1.5,1.5 0 0,1 11.5,22M15.5,1H7.5A2.5,2.5 0 0,0 5,3.5V20.5A2.5,2.5 0 0,0 7.5,23H15.5A2.5,2.5 0 0,0 18,20.5V3.5A2.5,2.5 0 0,0 15.5,1Z"></path></svg><span class="d-none  d-lg-flex">&nbsp;70&nbsp;60&nbsp;57&nbsp;30</span></a>
+                    </div>
+
+                <div class="hamburger-lines d-flex  d-lg-none">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                  </div>  
+            </div> 
+                </div>
+
+            </nav>
+            
+            <div class="mobilnav d-flex d-sm-flex d-md-flex d-lg-none flex-column justify-content-center align-items-center">
+                <a class="d-flex d-sm-flex d-md-flex d-lg-flex" href="/laan-penge/">Lån penge</a>
+                <a class="d-flex d-sm-flex d-md-flex d-lg-flex"  href="/samlelaan/">Samlelån</a>
+                <a class="d-flex d-sm-flex d-md-flex d-lg-flex" href="/billaan/">Billån</a>
+                <a class="d-flex d-sm-flex d-md-flex d-lg-flex" href="/laanetyper/">Lånetyper</a>
+            </div>
+       
+            <main class="pt-5">
+                <section class="d-flex flex-column align-items-center pt-5 pb-3 ">
+   
+                    <div class="d-flex flex-column justify-content-center align-items-center container">
+                        <h1>Ofte stillede spørgsmål</h1>
+                        <div class="underline"></div>
+                    <form>
+                        <input id="explainSearch" placeholder="Søg" type="text ">
+                    </form>     
+
+                    <div class="explainGrid">        
+                            <a class="ossbox">
+                                <span><p class="heading">Bådlån</p><span class="arrow closeArrow"></span></span>
+                            </a>
+
+                            <a class="ossbox">
+                                <span><p class="heading">Billån</p><span class="arrow closeArrow"></span></span>
+                            </a>
+
+                            <a class="ossbox">
+                                <span><p class="heading">Billig lån
+                                </p><span class="arrow closeArrow"></span></span>
+                                <p class="answer"></p>
+                            </a>
+
+                            <a class="ossbox">
+                                <span><p class="heading">Blankolån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+
+                            <a class="ossbox">
+                                <span><p class="heading">Finansiering
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+
+                            <a class="ossbox">
+                                <span><p class="heading">Forbrugslån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+
+                            <a class="ossbox">
+                                <span><p class="heading">Forbrugslån oversigt
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+
+                            <a class="ossbox">
+                                <span><p class="heading">Forbrugslån RKI ingen hindring
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+
+                            <a class="ossbox">
+                                <span><p class="heading">Hurtig kassekredit
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+
+                            <a class="ossbox">
+                                <span><p class="heading">Hurtig kredit
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+
+                            <a class="ossbox">
+                                <span><p class="heading">Hurtig lån till unge
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+
+                            <a class="ossbox">
+                                <span><p class="heading">Hvad er et forbrugslån?
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                        
+                            <a class="ossbox">
+                                <span><p class="heading">Indskudslån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            
+                            <a class="ossbox">
+                                <span><p class="heading">Kassekredit
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Kassekredit betydning
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Kassekredit renter
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Kredit lån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Kviklån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Kviklån gratis
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Kviklån renter
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Kviklån RKI ingen hindring
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Kviklån studerende
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Kviklån uden sikkerhed
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Lån med NemID
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Lån penge
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Lån penge 18 år
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading"> Lån penge uden sikkerhed
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Lån svar med det samme
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Lån til nye vinduer
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Låneberegner forbrugslån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Lille lån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Lynlån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Mikrolån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Minilån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Nye kviklån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Nye lån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Privatlån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Quicklån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Samlelån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Sammenlign lån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Skift bank
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Små lån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Små lån på minuttet
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">SMS lån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            <a class="ossbox">
+                                <span><p class="heading">Strakslån
+                                </p><span class="arrow closeArrow"></span></span>
+                            </a>
+                            
+                    </div>
+                    </div>
+                </section>     
+            </main>
+            <footer class="container-fluid">
+                <div class="d-flex flex-column flex-lg-row  justify-content-around flex-wrap pt-2 container">
+                    
+                    
+                    <div class="d-flex flex-column  align-items-start text-center">
+                        <strong class="pt-2 pb-2  pb-sm-2">Vores tjenester</strong>
+                        <a href="/laan-penge/">Lån penge</a>
+                        <a href="/samlelaan/">Samlelån</a>
+                        <a href="/forbrugslaan/">Forbrugslån</a>
+                        <a href="/billaan/">Billån</a>
+                        <a href="/laanebeloeb/">Populære lånebeløb</a>
+                        <a href="/laanetyper/">Lånetyper</a>
+
+                    </div>
+
+
+                    <div class="d-flex flex-column pt-2 pt-md-0">
+                        <strong class="pt-2 pb-2 pb-sm-2">Kundeservice</strong>
+                        <a target="_blank" rel="noopener noreferrer" href="tel:70605730">
+                            <svg xmlns="https://www.w3.org/2000/svg"
+                                class="c-svg-icon c-svg-icon--sm LinkBlock__Icon-sc-n64j81-0 hBzXIE"
+                                preserveAspectRatio="xMinYMax slice" viewBox="0 0 640 512" aria-hidden="true" focusable="false"
+                                role="img">
+                                <path fill="currentColor"
+                                    d="M476.5 22.9L382.3 1.2c-21.6-5-43.6 6.2-52.3 26.6l-43.5 101.5c-8 18.6-2.6 40.6 13.1 53.4l40 32.7C311 267.8 267.8 311 215.4 339.5l-32.7-40c-12.8-15.7-34.8-21.1-53.4-13.1L27.7 329.9c-20.4 8.7-31.5 30.7-26.6 52.3l21.7 94.2c4.8 20.9 23.2 35.5 44.6 35.5C312.3 512 512 313.7 512 67.5c0-21.4-14.6-39.8-35.5-44.6zM69.3 464l-20.9-90.7 98.2-42.1 55.7 68.1c98.8-46.4 150.6-98 197-197l-68.1-55.7 42.1-98.2L464 69.3C463 286.9 286.9 463 69.3 464z">
+                                </path>
+                            </svg>
+                            70 60 57 30</a>
+                        <a target="_blank" rel="noopener noreferrer" href="mailto:kundeservice@sambla.dk">
+                            <svg xmlns="https://www.w3.org/2000/svg"
+                                class="c-svg-icon c-svg-icon--sm LinkBlock__Icon-sc-n64j81-0 hBzXIE"
+                                preserveAspectRatio="xMinYMax slice" viewBox="0 0 640 512" aria-hidden="true" focusable="false"
+                                role="img">
+                                <path fill="currentColor"
+                                    d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h416c8.8 0 16 7.2 16 16v41.4c-21.9 18.5-53.2 44-150.6 121.3-16.9 13.4-50.2 45.7-73.4 45.3-23.2.4-56.6-31.9-73.4-45.3C85.2 197.4 53.9 171.9 32 153.4V112c0-8.8 7.2-16 16-16zm416 320H48c-8.8 0-16-7.2-16-16V195c22.8 18.7 58.8 47.6 130.7 104.7 20.5 16.4 56.7 52.5 93.3 52.3 36.4.3 72.3-35.5 93.3-52.3 71.9-57.1 107.9-86 130.7-104.7v205c0 8.8-7.2 16-16 16z">
+                                </path>
+                            </svg>
+                            kundeservice@sambla.dk</a>
+                        <a href="/sambla-forklarer/">Sambla forklarer</a>
+                        <a href="/ofte-stillede-spoergsmaal/">Ofte stillede spørgsmål</a>
+                        <a href="/documents/brugeraftale.pdf" target="_blank"
+                            rel="noopener noreferrer">Brugeraftale</a>
+                        <a href="/documents/Privatlivspolitik.pdf" target="_blank"
+                            rel="noopener noreferrer">Privatlivspolitik</a>
+                        <a href="/documents/cookie_data_policy_dk.pdf" target="_blank"
+                            rel="noopener noreferrer">Cookiepolitik</a>
+                        <a href="/documents/Sambla_plus_dk.pdf" target="_blank"
+                            rel="noopener noreferrer">Sambla Plus</a>
+                    </div>
+            
+                    <div class="d-flex flex-column pt-2 pt-md-0">
+                        <strong class="pt-2 pb-2 ">Sambla</strong>
+                        <a href="/om-sambla/">Om os</a>
+                        <a href="/partnere/">Partnere</a>
+                    </div>
+                </div>
+                <!--add sambla.xx links se sambla.dk-->
+                 <address class="d-flex flex-column justify-content-center pt-1 align-items-center text-center flex-grow-1 pt-5 container">
+
+                    <span class="d-flex justify-content-around"><a href="https://www.sambla.se/" class="ps-2 pe-2">Sambla.se</a> <a href="https://www.sambla.no/" class="ps-2 pe-2">Sambla.no</a> <a href="https://www.sambla.fi/" class="ps-2 pe-2">Sambla.fi</a></span>
+                    <p>
+                    2023 Sambla Group ApS CVR nr. <a href="https://datacvr.virk.dk/enhed/virksomhed/40804714?fritekst=salus%2520it&sideIndex=0&size=10">40804714</a> <br>Kronprinsessegade 54, 4. th
+                    1306 København K</p>
+                    <br>
+                    <a href="javascript: Cookiebot.renew()"> Ændre dit samtykke til cookies</a>
+                </address>
+            </footer>
+            <script type="text/javascript">
+                document.addEventListener('DOMContentLoaded', function () {
+                    
+                    /*get all a tags from grid*/
+                    let parent  = document.querySelector('.explainGrid')
+                    let articleLinks = parent.querySelectorAll('a')
+                    let explainArr=[];
+                   
+
+                    const input = document.querySelector('input');
+                    input.addEventListener('input', updateValue);
+
+
+                    /*push divs  and text contend to object array  */
+                    for (i = 0; i < articleLinks.length; ++i) {
+                        explainArr.push({div:articleLinks[i] ,txt:articleLinks[i].textContent.trim().toLowerCase()}) 
+                    }
+                        
+                    function updateValue(e) {
+                    
+                        //hide all divs on input
+                        for (i = 0; i < articleLinks.length; ++i) {
+                            articleLinks[i].classList.remove('showit');
+                            articleLinks[i].classList.add('hide')   
+                        }
+                        //const inputResult = 
+                        filterInput(explainArr, e.target.value.toLowerCase());
+                    }
+                        
+                   
+                    /*filter explainArr object on input and hide divs that do not match input query*/
+                    function filterInput(arr, query) {
+                     
+                            let result = arr.filter((el) => el.txt.includes(query.toLowerCase()));
+                            
+                            for (const [key, value] of Object.entries(result)) {
+                                value.div.classList.remove('hide');
+                                value.div.classList.add('showit');
+                           
+                            }
+                       
+                    }
+
+            }, false);
+            </script>
+    </body>
+</html>

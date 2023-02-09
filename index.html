@@ -14,8 +14,19 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#570014"/>
+    <!--
+        //TO do add cooki consent
+        <script type="text/javascript" charset="UTF-8" async="" src="https://consentcdn.cookiebot.com/consentconfig/e8b90224-a57f-47d2-a1da-24a1edc4f4cf/state.js"></script>
+        <script type="text/javascript" async="" src="https://consent.cookiebot.com/uc.js?cbid=e8b90224-a57f-47d2-a1da-24a1edc4f4cf&amp;consentmode-dataredaction=dynamic" id="Cookiebot"></script>
+    -->
 
-       
+    <!--
+        To do add FB pixel
+    -->
+
+    <!--
+        To do add salus clicktracker
+    -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,10 +43,10 @@
 
                     <div class="ps-1 ps-lg-5"><a href="/" aria-label="Sambla.dk den nye generation af låneformidlere"> </a><img src="/img/Sambla_Logo_White-Red_RGB.svg" alt="Sambla.dk Logo" width="200" height="60"></a></div>
                     <div class="flex-grow-1 d-flex flex-row align-items-center  justify-content-around">
-                        <a class="d-none  d-lg-flex" href="#">Lån penge</a>
-                        <a class="d-none  d-lg-flex" href="#">Samlelån</a>
-                        <a class="d-none  d-lg-flex" href="#">Billån</a>
-                        <a class="d-none  d-lg-flex" href="#">Lånetyper</a>
+                        <a class="d-none  d-lg-flex" href="/laan-penge/">Lån penge</a>
+                        <a class="d-none  d-lg-flex" href="/samlelaan/">Samlelån</a>
+                        <a class="d-none  d-lg-flex" href="/billaan/">Billån</a>
+                        <a class="d-none  d-lg-flex" href="/laanetyper/">Lånetyper</a>
                     </div>   
                     <div class="flex-grow-1 pe-3 pe-lg-5 d-flex flex-row align-items-center  justify-content-end">
                         <a aria-label="Ring til os" href="tel:70605730" class="d-flex align-items-center">
@@ -53,10 +64,10 @@
             </nav>
             
             <div class="mobilnav d-flex d-sm-flex d-md-flex d-lg-none flex-column justify-content-center align-items-center">
-                <a class="d-flex d-sm-flex d-md-flex d-lg-flex" href="#">Lån penge</a>
-                <a class="d-flex d-sm-flex d-md-flex d-lg-flex" href="#">Samlelån</a>
-                <a class="d-flex d-sm-flex d-md-flex d-lg-flex" href="#">Billån</a>
-                <a class="d-flex d-sm-flex d-md-flex d-lg-flex" href="#">Lånetyper</a>
+                <a class="d-flex d-sm-flex d-md-flex d-lg-flex" href="/laan-penge/">Lån penge</a>
+                <a class="d-flex d-sm-flex d-md-flex d-lg-flex"  href="/samlelaan/">Samlelån</a>
+                <a class="d-flex d-sm-flex d-md-flex d-lg-flex" href="/billaan/">Billån</a>
+                <a class="d-flex d-sm-flex d-md-flex d-lg-flex" href="/laanetyper/">Lånetyper</a>
             </div>
 
             <header class="d-flex flex-column flex-lg-row container-fluid align-items-center">
@@ -83,21 +94,21 @@
 
             <main class="d-flex flex-column">
                 
-                <section class="d-flex flex-column align-items-center pt-5 pb-3 section1">
-                    <div class="container partnersdiv">
+                <section class="d-flex flex-column align-items-center pt-5 pb-5 section1">
+                    <div class="container"><!--partnersdiv add class for show hide-->
                     <div class="fluid-row dense ">
-                        <div class="fluid-flex bank"><img alt="" src="https://www.sambla.dk/assets/banks/denmark/basis.svg" class=""></div>
-                        <div class="fluid-flex bank"><img alt="" src="https://www.sambla.dk/assets/banks/denmark/resurs-col.png" class=""></div>
-                        <div class="fluid-flex bank"><img alt="" src="https://www.sambla.dk/assets/banks/denmark/express.svg" class=""></div>
-                        <div class="fluid-flex bank"><img alt="" src="https://www.sambla.dk/assets/banks/denmark/lanlet.png" class=""></div>
-                        <div class="fluid-flex bank"><img alt="" src="https://www.sambla.dk/assets/banks/denmark/ferratumDK.png" class=""></div>
-                        <div class="fluid-flex bank"><img alt="" src="https://www.sambla.dk/assets/banks/denmark/leasy.svg" class=""></div>
-                        <div class="fluid-flex bank"><img alt="" src="https://www.sambla.dk/assets/banks/denmark/nordkredit.svg" class=""></div>
-                        <div class="fluid-flex bank"><img alt="" src="https://www.sambla.dk/assets/banks/denmark/tando.png" class=""></div>
-                        <div class="fluid-flex bank"><img alt="" src="https://www.sambla.dk/assets/banks/denmark/cashper.svg" class=""></div>
+                        <div class="fluid-flex bank"><img alt="basis bank logo" src="https://www.sambla.dk/assets/banks/denmark/basis.svg" loading="lazy" width="225" height="98"></div>
+                        <div class="fluid-flex bank"><img alt="Resurs bank logo" src="https://www.sambla.dk/assets/banks/denmark/resurs-col.png" loading="lazy" width="225" height="98"></div>
+                        <div class="fluid-flex bank"><img alt="Express bank logo" src="https://www.sambla.dk/assets/banks/denmark/express.svg" loading="lazy" width="225" height="98"></div>
+                        <div class="fluid-flex bank"><img alt="Lånlet logo" src="https://www.sambla.dk/assets/banks/denmark/lanlet.png" loading="lazy" width="225" height="98"></div>
+                        <div class="fluid-flex bank"><img alt="Ferratum DK logo" src="https://www.sambla.dk/assets/banks/denmark/ferratumDK.png" loading="lazy" width="225" height="98"></div>
+                        <div class="fluid-flex bank"><img alt="Leasy logo" src="https://www.sambla.dk/assets/banks/denmark/leasy.svg" loading="lazy" width="225" height="98"></div>
+                        <div class="fluid-flex bank"><img alt="Nordkredit logo" src="https://www.sambla.dk/assets/banks/denmark/nordkredit.svg" loading="lazy" width="225" height="98"></div>
+                        <div class="fluid-flex bank"><img alt="Tando logo" src="https://www.sambla.dk/assets/banks/denmark/tando.png" loading="lazy" width="225" height="98"></div>
+                        <div class="fluid-flex bank"><img alt="Cashper logo" src="https://www.sambla.dk/assets/banks/denmark/cashper.svg" loading="lazy" width="225" height="98"></div>
                     </div>
                     </div>
-                    <div class="butn mt-5 partnerExpandBtn" role="button">Via alle</div>
+                  <!--  <div class="butn mt-5 partnerExpandBtn" role="button">Via alle</div>-->
                 </section>
                 
                 <section class="d-flex flex-column align-items-center pt-5 pb-3 section2" >
@@ -287,51 +298,51 @@
                         <div class="underline"></div>
                         <div class="grid">
                             
-                            <div class="gridbox">
-                                <a href="#"> 
+                            <article class="gridbox">
+                                <a href="/laan-penge/"> 
                                     <span class="gridboxtop"><p><b>Lån penge</b></p>
                                         <span class="arrow closeArrow"></span>
                                     </span>
                                     <p>Lån penge via Sambla på nettet. Sammenlign renter hos flere banker og långivere samtidigt, på en enkelt ansøgning!</p>
                                 </a>
-                            </div>
+                            </article>
 
-                            <div class="gridbox">
-                                <a href="#"> 
+                            <article class="gridbox">
+                                <a href="/samlelaan/"> 
                                     <span class="gridboxtop"><b>Samlelån</b>
                                         <span class="arrow closeArrow"></span>
                                     </span>
                                     <p>Saml dine dyre lån og kreditter til et enkelt lån. Sænk renten, få en bedre kreditværdighed, og en lavere månedlig ydelse.</p>
                                 </a>
-                            </div>
+                            </article>
                             
-                            <div class="gridbox">
-                                <a href="#"> 
+                            <article class="gridbox">
+                                <a href="/forbrugslaan/"> 
                                     <span class="gridboxtop"><b>Forbrugslån</b>
                                         <span class="arrow closeArrow"></span>
                                     </span>
                                     <p>Sammenlign forbrugslån op til hele 500 000 kr. Via Sambla kan du få den bedste rente på dit forbrugslån, helt gratis og bindingsfrit.</p>
                                 </a>
-                            </div>
+                            </article>
         
-                            <div class="gridbox">
-                                <a href="#"> 
+                            <article class="gridbox">
+                                <a href="/billaan/"> 
                                     <span class="gridboxtop"><b>Billån</b>
                                         <span class="arrow closeArrow"></span>
                                     </span>
                                     <p>Skal du til at købe bil? Sammenlign renter for at finde det billigeste og bedste billån. Lån op til 500 000 kr.</p>
                                 </a>
-                            </div>
+                            </article>
         
         
-                            <div class="gridbox">
-                                <a href="#"> 
+                            <article class="gridbox">
+                                <a href="/billig-laan/"> 
                                     <span class="gridboxtop"><b>Billig lån</b>
                                         <span class="arrow closeArrow"></span>
                                     </span>
                                     <p>Find et billigt lån med hjælp fra Sambla. Et billigt lån finder du ved at sammenligne renten hos flere banker og långivere.</p>
                                 </a>
-                            </div>
+                            </article>
 
                         </div>
                     </div>
@@ -376,6 +387,7 @@
                 </section>
              
                 <section class="d-flex flex-column align-items-center pt-5 pb-3 ">
+   
                     <div class="d-flex flex-column justify-content-center align-items-center container">
                         <h2>Ofte stillede spørgsmål</h2>
                         <div class="underline"></div>
@@ -438,6 +450,50 @@
         
                         </div>
                     </div>
+                    <script type="application/ld+json">
+                        {
+                            "@context": "https://schema.org",
+                            "@type": "FinancialService",
+                            "legalName": "Sambla ApS",
+                            "name": "Sambla",
+                            "logo": "https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/100558379_104416291294785_1067032037111627776_n.png?_nc_cat=110&amp;_nc_sid=85a577&amp;_nc_ohc=slwu25J83mkAX8E96An&amp;_nc_ht=scontent-arn2-1.xx&amp;oh=314c5c981c68d0b8aca642a528581209&amp;oe=5EF5D3DE",
+                            "image": "https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/100558379_104416291294785_1067032037111627776_n.png?_nc_cat=110&amp;_nc_sid=85a577&amp;_nc_ohc=slwu25J83mkAX8E96An&amp;_nc_ht=scontent-arn2-1.xx&amp;oh=314c5c981c68d0b8aca642a528581209&amp;oe=5EF5D3DE",
+                            "telephone": "70444450",
+                            "url": "https://www.sambla.dk",
+                            "email": "kundeservice@sambla.dk",
+                            "address": {
+                                "@type": "PostalAddress",
+                                "streetAddress": "Kronprinsessegade 54. 4 th",
+                                "addressLocality": "København K",
+                                "postalCode": "1306"
+                            },
+                            "openingHours": ["Mo,Tu,We,Th,Fr,Sa,Su 00:00-00:00"],
+                            "priceRange": "5000 - 500000"
+                        }
+                    </script>
+                    <script type="application/ld+json">
+                            {
+                                "@context": "https://schema.org",
+                                "@type": "LocalBusiness",
+                                "name": "Sambla",
+                                "url": "https://www.sambla.dk",
+                                "image": "https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/100558379_104416291294785_1067032037111627776_n.png?_nc_cat=110&amp;_nc_sid=85a577&amp;_nc_ohc=slwu25J83mkAX8E96An&amp;_nc_ht=scontent-arn2-1.xx&amp;oh=314c5c981c68d0b8aca642a528581209&amp;oe=5EF5D3DE",
+                                "sameAs": ["https://www.facebook.com/SamblaDanmark/",
+                                    "https://dk.trustpilot.com/review/sambla.dk"
+                                ],
+                                "logo": "https://scontent-arn2-1.xx.fbcdn.net/v/t1.0-9/100558379_104416291294785_1067032037111627776_n.png?_nc_cat=110&amp;_nc_sid=85a577&amp;_nc_ohc=slwu25J83mkAX8E96An&amp;_nc_ht=scontent-arn2-1.xx&amp;oh=314c5c981c68d0b8aca642a528581209&amp;oe=5EF5D3DE",
+                                "address": {
+                                    "@type": "PostalAddress",
+                                    "streetAddress": "Kronprinsessegade 54. 4 th",
+                                    "addressRegion": "København K",
+                                    "postalCode": "1306",
+                                    "addressCountry": "Danmark"
+                                },
+                                "openingHours": ["Mo,Tu,We,Th,Fr,Sa,Su 00:00-00:00"],
+                                "telephone": "70605730",
+                                "priceRange": "5000 - 500000"
+                            }
+                    </script>
                 </section>
     
             </main>
@@ -448,12 +504,12 @@
                     
                     <div class="d-flex flex-column  align-items-start text-center">
                         <strong class="pt-2 pb-2  pb-sm-2">Vores tjenester</strong>
-                        <a href="https://www.sambla.dk/laan-penge/">Lån penge</a>
-                        <a href="https://www.sambla.dk/samlelaan/">Samlelån</a>
-                        <a href="https://www.sambla.dk/forbrugslaan/">Forbrugslån</a>
-                        <a href="https://www.sambla.dk/billaan/">Billån</a>
-                        <a href="https://www.sambla.dk/laanebeloeb/">Populære lånebeløb</a>
-                        <a href="https://www.sambla.dk/laanetyper/">Lånetyper</a>
+                        <a href="/laan-penge/">Lån penge</a>
+                        <a href="/samlelaan/">Samlelån</a>
+                        <a href="/forbrugslaan/">Forbrugslån</a>
+                        <a href="/billaan/">Billån</a>
+                        <a href="/laanebeloeb/">Populære lånebeløb</a>
+                        <a href="/laanetyper/">Lånetyper</a>
                     </div>
 
 
@@ -479,32 +535,34 @@
                                 </path>
                             </svg>
                             kundeservice@sambla.dk</a>
-                        <a href="https://www.sambla.dk/sambla-forklarer/">Sambla forklarer</a>
-                        <a href="https://www.sambla.dk/ofte-stillede-spoergsmaal/">Ofte stillede spørgsmål</a>
-                        <a href="https://www.sambla.dk/assets/documents/brugeraftale.pdf" target="_blank"
+                        <a href="/sambla-forklarer/">Sambla forklarer</a>
+                        <a href="/ofte-stillede-spoergsmaal/">Ofte stillede spørgsmål</a>
+                        <a href="/documents/brugeraftale.pdf" target="_blank"
                             rel="noopener noreferrer">Brugeraftale</a>
-                        <a href="https://www.sambla.dk/assets/documents/Privatlivspolitik.pdf" target="_blank"
+                        <a href="/documents/Privatlivspolitik.pdf" target="_blank"
                             rel="noopener noreferrer">Privatlivspolitik</a>
-                        <a href="https://www.sambla.dk/assets/documents/cookie_data_policy_dk.pdf" target="_blank"
+                        <a href="/documents/cookie_data_policy_dk.pdf" target="_blank"
                             rel="noopener noreferrer">Cookiepolitik</a>
-                        <a href="https://www.sambla.dk/assets/documents/Sambla_plus_dk.pdf" target="_blank"
+                        <a href="/documents/Sambla_plus_dk.pdf" target="_blank"
                             rel="noopener noreferrer">Sambla Plus</a>
                     </div>
             
                     <div class="d-flex flex-column pt-2 pt-md-0">
                         <strong class="pt-2 pb-2 ">Sambla</strong>
-                        <a href="https://www.sambla.dk/om-sambla/">Om os</a>
-                        <a href="https://www.sambla.dk/partnere/">Partnere</a>
+                        <a href="/om-sambla/">Om os</a>
+                        <a href="/partnere/">Partnere</a>
                     </div>
                 </div>
                 <!--add sambla.xx links se sambla.dk-->
-                <div class="d-flex flex-column justify-content-center pt-1 align-items-center text-center flex-grow-1 pt-5 container">
-                    Sambla.dk –
-                    2022 Salus IT ApS CVR nr. 40804714 Kronprinsessegade 54, 4. th
-                    1306 København K
+                 <address class="d-flex flex-column justify-content-center pt-1 align-items-center text-center flex-grow-1 pt-5 container">
+
+                    <span class="d-flex justify-content-around"><a href="https://www.sambla.se/" class="ps-2 pe-2">Sambla.se</a> <a href="https://www.sambla.no/" class="ps-2 pe-2">Sambla.no</a> <a href="https://www.sambla.fi/" class="ps-2 pe-2">Sambla.fi</a></span>
+                    <p>
+                    2023 Sambla Group ApS CVR nr. <a href="https://datacvr.virk.dk/enhed/virksomhed/40804714?fritekst=salus%2520it&sideIndex=0&size=10">40804714</a> <br>Kronprinsessegade 54, 4. th
+                    1306 København K</p>
                     <br>
-                    <a href="#"> Ændre dit samtykke til cookies</a>
-                </div>
+                    <a href="javascript: Cookiebot.renew()"> Ændre dit samtykke til cookies</a>
+                </address>
             </footer>
            
             <script src="/js/sambladk.js"></script>
