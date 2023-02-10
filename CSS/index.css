@@ -87,8 +87,12 @@ font-size: 2rem;
 .h2,h2{
     font-size: 1.5rem;
 }
-
-.h1,.h2,.h3,
+.h3,h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+.h1,.h2,
 h1,h2,h3 {
     font-family: 'Miriam Libre', sans-serif;
     margin-bottom: 1.5rem;
@@ -135,8 +139,8 @@ p,h4,h5,h6{
     -moz-transform: translate(1rem, -4rem);
     -ms-transform: translate(1rem, -4rem);
     -o-transform: translate(1rem, -4rem);
-width: 1.2rem;
-height: 1.2rem;
+    width: 1.2rem;
+    height: 1.2rem;
 }
 
 .arrow::after {
@@ -196,11 +200,11 @@ height: 1.2rem;
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
-    transition: all 0.5s cubic-bezier(0.3, 0.1, 0.1, 0.3) .1s;
-    -webkit-transition: all 0.5s cubic-bezier(0.3, 0.1, 0.1, 0.3) .1s;
-    -moz-transition: all 0.5s cubic-bezier(0.3, 0.1, 0.1, 0.3) .1s;
-    -ms-transition: all 0.5s cubic-bezier(0.3, 0.1, 0.1, 0.3) .1s;
-    -o-transition: all 0.5s cubic-bezier(0.3, 0.1, 0.1, 0.3) .1s;
+    transition: all 0.3s cubic-bezier(0.3, 0.1, 0.1, 0.3) .1s;
+    -webkit-transition: all 0.3s cubic-bezier(0.3, 0.1, 0.1, 0.3) .1s;
+    -moz-transition: all 0.3s cubic-bezier(0.3, 0.1, 0.1, 0.3) .1s;
+    -ms-transition: all 0.3s cubic-bezier(0.3, 0.1, 0.1, 0.3) .1s;
+    -o-transition: all 0.3s cubic-bezier(0.3, 0.1, 0.1, 0.3) .1s;
 }
 
 
@@ -307,6 +311,24 @@ header {
     background-color: rgb(var(--dark-red));
     color: rgb(var(--light));
 }
+
+.breadcrumbs a{
+    text-decoration: none;
+    color: rgb(var(--koks));;
+}
+.breadcrumbs a:hover{
+    color: rgb(var(--koks));
+    text-decoration: underline;
+    text-decoration-color: rgb(var(--samblared));
+    -moz-text-decoration-color: rgb(var(--samblared));
+}
+.breadcrumbs svg {
+    width: 16px;
+    height: 16px;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+
 
 
 .section1{
@@ -477,6 +499,8 @@ li {
     scroll-snap-align: center;
 }
 
+
+
 /*Vores andre tjenester*/
 .grid {
     width: 100%;
@@ -552,49 +576,57 @@ font-weight: 600;
  /*   filter:drop-shadow(30px 10px 4px rgb(var(--dark-red)));
     -webkit-filter:drop-shadow(0.2rem 0.15rem 0.2rem rgba(var(--dark-red),0.5));*/
 }
-
-.ossbox {
-    font-family: 'Be Vietnam Pro', sans-serif;
-    background: white;
-    padding-top: 2rem;
-    padding-right: 1rem;
-    padding-bottom: 3rem;
+.ossbox{
+    background:#fff;
+    
     padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+    margin-bottom:1rem;
     border-radius: 1rem;
-    font-weight: 400;
-    text-align: left;
-    margin: 1.25rem 0;
+height: auto;
     overflow: hidden;
-    max-height: 1rem;
 
+
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 10%) 0px 8px 15px, rgb(0 0 0 / 15%) 0px 3px 3px;
+    width:100%
+   }
+   .ossbox > span{
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start;
+   }
+   .ossbox > span p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-bottom:0rem
+   }
+   
+   .ossbox > p{
+    margin-block-start: 1em;
+    margin-block-end:0em;
+   /* padding-top:calc(0.7rem + 0.5vw);*/
+   }
+.answer{
+    max-height: 0rem;
     transition: max-height .8s cubic-bezier(0, 1, 0, 1) -.1s;
     -webkit-transition: max-height .8s cubic-bezier(0, 1, 0, 1) -.1s;
     -moz-transition: max-height .8s cubic-bezier(0, 1, 0, 1) -.1s;
     -ms-transition: max-height .8s cubic-bezier(0, 1, 0, 1) -.1s;
     -o-transition: max-height .8s cubic-bezier(0, 1, 0, 1) -.1s;
-    cursor: pointer;
-    box-shadow: rgb(0 0 0 / 10%) 0px 8px 15px, rgb(0 0 0 / 15%) 0px 3px 3px;
-    width:100%
-}
-
-.ossbox span {
-    color: black;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: flex-start;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    appearance: none;
-    cursor: pointer;
-    list-style: none;
-
-}
+    overflow: hidden;
+   }
 
 
-.ossboxopen {
+.answerOpen {
     max-height: 999px;
-    transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
-    transition-delay: 0s;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
 }
 
 
@@ -674,7 +706,7 @@ footer a:hover {
 
     .mobilnavOpen {
         max-height: 999px;
-        top: 4rem;
+        top: 3rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
         transition: all 0.5s ease-in-out;
@@ -723,6 +755,7 @@ footer a:hover {
           max-height:2.7rem;
           padding: 0.5rem;
     }
+    */
     .grid {
         position: relative;
         display: grid;
@@ -731,13 +764,11 @@ footer a:hover {
         -webkit-box-pack: start;
         justify-content: center;
     }
-*/
 
-    .ossbox .heading {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
+
+    .ossbox > span{
+      /*    margin-bottom:calc(0.8rem + 0.5vw)*/
+       }
 
     .ossboxopen .heading {
         white-space: normal;
@@ -751,9 +782,6 @@ footer a:hover {
     @media (min-width:576px) {
         .ossbox .heading {
             overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            max-width: calc(90ch);
         }
 
 

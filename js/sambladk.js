@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     //open close FAQ elements
     let articles = document.querySelectorAll('.ossbox');
-   
+
     let burger = document.querySelector('.hamburger-lines')
     let mobilnav = document.querySelector('.mobilnav');
 
@@ -38,8 +38,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
 
     function toggle(e) {
-        e.currentTarget.classList.toggle("ossboxopen");
-       let arrow = e.currentTarget.querySelector('.arrow');
+        /*e.currentTarget.classList.toggle("ossboxopen");*/
+        e.currentTarget.querySelector('.answer').classList.toggle("answerOpen");
+       
+        let arrow = e.currentTarget.querySelector('.arrow');
        arrow.classList.toggle("openArrow");
     }
 })

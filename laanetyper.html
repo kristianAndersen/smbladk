@@ -52,7 +52,7 @@
             width: 100%;
         }
         .explain-pill{
-            margin: 1rem 0;
+            margin: 0.2rem 0;
             padding: 0.7rem;
             color: #464a4c;
             background-color: rgb(var(--white));
@@ -70,7 +70,7 @@
         }
 
         #explainSearch{
-            width: 100%;
+            width: 100%!important;
             margin: 1rem 0;
             padding: 1rem;
             color: #464a4c;
@@ -82,6 +82,7 @@
         }
         a{
             text-decoration: none;
+            color: rgba(var(--koks),1);
         }
         .ossbox{
             margin: 0; 
@@ -157,19 +158,33 @@
                 <section class="d-flex flex-column align-items-center pt-5 pb-3 ">
    
                     <div class="d-flex flex-column justify-content-center align-items-center container">
-                        <h1>Ofte stillede spørgsmål</h1>
+                        
+                        
+                        
+                        <!--TO do implement in PHP-->
+                        <div class="d-flex w-100 align-items-center breadcrumbs">
+                            <a href="/">Hjem</a><svg viewBox="0 0 24 24"><path fill="#ff3926" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"></path></svg><a href="#">Lånetyper</a> 
+                        </div>
+
+
+
+                        <h1 class="text-center">Ofte stillede spørgsmål</h1>
                         <div class="underline"></div>
-                        <div class="d-flex w-100">
+                    <div class="w-100">
+<!---
+                        <div class="d-flex w-100 flex-wrap">
                             <a href="https://www.sambla.dk/billaan/" class="explain-pill">Billån</a>
                             <a href="https://www.sambla.dk/forbrugslaan/" class="explain-pill">Forbrugslån</a>
                             <a href="https://www.sambla.dk/kassekredit/" class="explain-pill">Kassekredit</a>
                             <a href="https://www.sambla.dk/laan-penge/" class="explain-pill">Lån penge</a>
                             <a href="https://www.sambla.dk/samlelaan/" class="explain-pill">Samlelån</a>
                         </div>
+                    -->
                     <form>
                         <input id="explainSearch" placeholder="Søg" type="text ">
                     </form>     
 
+                    <!--TO DO create boxes in dynamic PHP -->
                     <div class="explainGrid">        
                             <a href="https://www.sambla.dk/laan-penge/baadlaan/" class="ossbox">
                                 <span><p class="heading">Bådlån</p><span class="arrow closeArrow"></span></span>
