@@ -9,17 +9,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
    // let partnerExpandBtn = document.querySelector('.partnerExpandBtn');
    // let partnersdiv = document.querySelector('.partnersdiv')
 
-    let tl = document.querySelector('.tl')
+    let tl = document.querySelector('.tl');
+
+    let tlcard = document.querySelector('.tl-card')
     let scrollRight = document.getElementById('scroll-right');
     let scrollLeft = document.getElementById('scroll-left');
   
     /*Scroll left right*/
         scrollRight.addEventListener('click', (event) => {
-        tl.scrollBy(330, 0);
-    });
+         
+           let  tlscrollwidth= tlcard.offsetWidth
+            tl.scrollBy(tlscrollwidth, 0);
+         });
         scrollLeft.addEventListener('click', (event) => {
-        tl.scrollBy(-330, 0);
-    });
+            let  tlscrollwidth= tlcard.offsetWidth
+            tl.scrollBy(-tlscrollwidth, 0);
+        });
 
     /*partners expand top show all 
     partnerExpandBtn.addEventListener('click', (event) => {
