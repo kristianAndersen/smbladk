@@ -582,7 +582,7 @@ font-weight: 600;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top:1rem;
-    padding-bottom:1rem;
+    padding-bottom:0rem;
     margin-bottom:1rem;
     border-radius: 1rem;
 height: auto;
@@ -605,8 +605,8 @@ height: auto;
    }
    
    .ossbox > p{
-    margin-block-start: 1em;
-    margin-block-end:0em;
+    margin-block-start: 0em;
+    margin-block-end:1em;
    /* padding-top:calc(0.7rem + 0.5vw);*/
    }
 .answer{
@@ -622,11 +622,11 @@ height: auto;
 
 .answerOpen {
     max-height: 999px;
-    transition: all 0.5s ease-in;
-    -webkit-transition: all 0.5s ease-in;
-    -moz-transition: all 0.5s ease-in;
-    -ms-transition: all 0.5s ease-in;
-    -o-transition: all 0.5s ease-in;
+    transition: all 0.9s ease-in;
+    -webkit-transition: all 0.9s ease-in;
+    -moz-transition: all 0.9s ease-in;
+    -ms-transition: all 0.9s ease-in;
+    -o-transition: all 0.9s ease-in;
 }
 
 
